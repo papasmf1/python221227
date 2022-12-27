@@ -9,5 +9,8 @@ class Person:
 
 #2)인스턴스(복사본)을 생성
 p1 = Person() 
+p2 = Person() 
 #3)메서드 호출
 p1.print() 
+p2.print()
+
