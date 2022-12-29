@@ -19,3 +19,8 @@ print(link)
 # <td class="title">
 #   <a href="/webtoon/detaili">마음의 소리 50화 &lt;격렬한 나의 하루&gt;</a>
 # </td>
+for item in cartoons:
+    title = item.find("a").text.strip()
+    print(title)
+
+
