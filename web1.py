@@ -11,7 +11,14 @@ soup = BeautifulSoup(page, "html.parser")
 #문서 <p> 몽땅 검색 
 #print( soup.find_all("p") )
 #첫번째 <p>만 검색
-print( soup.find("p") )
+#print( soup.find("p") )
+#조건 <p class=outer-text> class키워드 
+#print( soup.find_all("p", class_='outer-text') )
+#내부 컨텐츠만 출력<p>컨텐츠</p> 
+for item in soup.find_all("p"):
+    title = item.text.strip()
+    title = title.replace("\n", "")
+    print(title)
 
 
 
