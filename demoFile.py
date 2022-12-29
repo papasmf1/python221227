@@ -23,8 +23,8 @@ print("{0:e}".format(4/3))
 print("{0:f}".format(4/3))
 print("{0:.3f}".format(4/3))
 
-#파일을 쓰기 
-f = open("c:\\work\\demo.txt", "wt")
-f.write("한줄쓰기\n")
+#파일을 쓰기(raw string notation) (write text)
+f = open("c:/work/demo.txt", "wt")
+f.write("한줄쓰기\n두번째라인\n세번째라인\n")
 f.close() 
 
