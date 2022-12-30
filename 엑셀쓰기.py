@@ -1,8 +1,8 @@
 import xlwt
-
+#엑셀 전표(공책)
 workbook = xlwt.Workbook(encoding="utf-8")
 workbook.default_style.font.height = 20*11
-
+#종이를 한장 추가 
 worksheet = workbook.add_sheet(u'시트0')
 
 font_style=xlwt.easyxf('font:height 280;')
